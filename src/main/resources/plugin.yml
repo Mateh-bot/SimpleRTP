@@ -1,0 +1,11 @@
+name: SimpleRTP
+version: '1.0-SNAPSHOT'
+main: org.mateh.simpleRTP.Main
+api-version: '1.21'
+commands:
+  rtp:
+    description: Teleports the player to a random location.
+  rtpqueue:
+    description: Queues the player to teleport them in pairs.
+  rld:
+    description: Reloads the plugin configuration.

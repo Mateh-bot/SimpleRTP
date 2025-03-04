@@ -1,0 +1,46 @@
+cooldown: 60
+tick: 20
+
+use-gui: false
+
+rtp:
+  worlds:
+    - world
+    - world_nether
+  range: 1000
+  range-queue: 300.0
+  min-y: 50
+  max-y: 150
+
+messages:
+  rtp: "Teleported randomly!"
+  rtp-cooldown: "Wait %cooldown% seconds!"
+  zone-title: "Zone activated!"
+  zone-actionbar: "Teleporting you..."
+  zone-error: "Could not find a safe location, please try again."
+  zone-no-exist: "No defined zones were found in the configuration."
+  zone-countdown: "Teleporting in %time% seconds..."
+  zone-out: "You have left the zone, teleportation cancelled."
+  queue-wait: "Waiting for an opponent..."
+  queue-match: "Matched with %opponent%!"
+  queue-already: "You are already in the queue."
+  queue-error: "Could not find a safe location for the matched player."
+
+zone:
+  enabled: true
+  particles-enabled: true
+  particles-interval: 20
+  particles-distance: 50.0
+  particle:
+    type: "DRAGON_BREATH"
+    count: 5
+  zones:
+    Zona1:
+      name: "Zone1"
+      world: "world"
+      min-x: 5
+      max-x: 15
+      min-y: 50
+      max-y: 55
+      min-z: 5
+      max-z: 15
